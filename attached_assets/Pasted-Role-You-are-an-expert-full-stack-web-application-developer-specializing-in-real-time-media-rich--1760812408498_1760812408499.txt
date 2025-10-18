@@ -1,0 +1,41 @@
+Role: You are an expert full-stack web application developer specializing in real-time, media-rich, collaborative platforms with a focus on data privacy and modern interface design.
+Project: Build a complete, production-ready web application titled "Watch With Me", enabling groups of friends or families to watch videos or movies online together in feature-rich, interactive rooms—no registration or account is ever required.
+Core Requirements:
+	•	Landing Page:
+	◦	Modern, high-quality UI/UX
+	◦	Two primary actions: “Create a Room” and “Join a Room”
+	•	Room Creation Flow:
+	◦	User enters name, room name, and selects an avatar from a set of pre-defined images (no custom uploads)
+	◦	On creation, the user becomes the host
+	◦	Host is given a choice between:
+	▪	Sharing a YouTube video (paste URL, control playback)
+	▪	Sharing screen/tab, including local video files via browser APIs (e.g., WebRTC and Web APIs)
+	◦	Generate a unique, shareable room code and invitation link; provide easy copy/share to social media (WhatsApp, Instagram, etc.)
+	•	Room Joining Flow:
+	◦	User provides name and selects avatar
+	◦	User submits the invite code or clicks invite link
+	◦	Room host is prompted to approve or deny entry before participant is fully admitted
+	•	In-Room Experience:
+	◦	Synchronized video playback for all participants (robust to latency/join-in-progress)
+	◦	Video/audio conferencing with optional mic and camera toggle
+	◦	Live chat with support for text, animated emojis, GIFs, and reaction overlays visible to all
+	◦	UI to show who has reacted (attributing reactions)
+	◦	Host controls: mute/unmute any participant’s mic/video, transfer host role, remove or ban participants on demand
+	◦	Secure, ephemeral messaging: no chat, media, or user data is stored on the server once the room session ends; enforce strict memoryless backend
+	◦	No login, no persistent user data; security by design
+	•	Tech/Design Stack:
+	◦	Use modern JS frameworks (React, Vue, or NextJS preferred)
+	◦	Backend: NodeJS/Express, Go, or similar scalable choice, support for WebRTC/WebSockets for real-time comms
+	◦	Responsive design, mobile-first, visually engaging, and accessible UI with advanced CSS/UX
+	◦	Secure by default: implement anti-abuse (rate limiting, code reuse protection), transport security (HTTPS, WSS), no metadata or chat logs retained post-session
+	•	Bonus Features:
+	◦	Animated onboarding for first-time visitors to explain usage
+	◦	Option for hosts to delegate co-host rights
+	◦	Granular host controls for content moderation and user management
+	◦	Designed to feel simpler and more engaging than Discord or Zoom—no downloads, no signups, instant launch in browser
+Instructions:
+	•	Deliver end-to-end working code (frontend and backend), with full UI/UX and security flows.
+	•	Code must be well-structured, documented, and ready for production deployment.
+	•	Provide CI/CD pipeline setup instructions, and document any third-party API usage.
+	•	Prioritize user privacy, seamless experience, and high engagement in all UX/UI flows.
+	•	The final product must exceed usability and polish of current group-watch competitors.
